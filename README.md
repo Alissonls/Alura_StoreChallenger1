@@ -1,107 +1,101 @@
 # 🏬 Alura Store Brasil – Análise de Vendas
 
-## 📖 Sobre o Projeto
-O projeto **Alura Store Brasil** faz parte do **Challenge Data Science da Alura**, com o objetivo de desenvolver uma análise completa de dados de vendas utilizando ferramentas do ecossistema Python.  
+## 📖 Sobre o Projeto  
+O projeto **Alura Store Brasil** faz parte do **Challenge Data Science da Alura**, com o objetivo de realizar uma **análise exploratória e visual de dados de vendas** de diferentes lojas, utilizando ferramentas do ecossistema **Python**.
 
-O desafio envolve a consolidação de dados de **quatro lojas diferentes** e a criação de um relatório visual e interativo com gráficos e insights sobre desempenho comercial, categorias mais vendidas e comportamento de compra por região.
+O desafio consiste em:
+- Consolidar dados de quatro lojas diferentes;
+- Tratar e limpar os dados com **Pandas**;
+- Gerar gráficos interativos e relatórios no **Jupyter Notebook**;
+- Extrair **insights sobre desempenho, categorias e regiões de vendas**.
 
 ---
 
-## 🧭 Fluxo do Projeto (Mermaid)
+## 🧭 Estrutura do Projeto (Mermaid)
 
 ```mermaid
-flowchart TD
+graph TD
 
-subgraph DADOS[🗂️ Etapa 1: Dados de Entrada]
-A1[Arquivos CSV<br>loja_1.csv, loja_2.csv, loja_3.csv, loja_4.csv]
+A[📦 challenge1-data-science] --> B1[📁 base-de-dados-challenge-1]
+A --> B2[📁 graficos]
+A --> B3[📘 AluraStoreBrasilA.ipynb]
+A --> B4[⚙️ generate_plots.py]
+A --> B5[📝 RELATORIO_ANALISE_ALURA_STORE.md]
+A --> B6[📖 README.md]
+
+B1 --> C1[📊 loja_1.csv]
+B1 --> C2[📊 loja_2.csv]
+B1 --> C3[📊 loja_3.csv]
+B1 --> C4[📊 loja_4.csv]
+
+B2 --> D1[(.gitkeep)]
+
+subgraph FLUXO[🔄 Fluxo de Trabalho]
+E1[📂 Leitura dos Dados CSV] --> E2[🧹 Limpeza e Preparação]
+E2 --> E3[📈 Geração de Gráficos]
+E3 --> E4[🧠 Análise e Insights]
+E4 --> E5[📑 Relatório Final e Documentação]
 end
 
-subgraph PROCESSAMENTO[⚙️ Etapa 2: Processamento de Dados]
-B1[Leitura e Consolidação<br>com Pandas]
-B2[Limpeza e Conversão de Datas]
-end
-
-subgraph ANALISE[📊 Etapa 3: Análise e Visualização]
-C1[Geração de Gráficos<br>com Matplotlib e Seaborn]
-C2[Análise Visual e Interpretação dos Resultados]
-end
-
-subgraph INSIGHTS[🧠 Etapa 4: Resultados e Insights]
-D1[Total de Vendas por Categoria]
-D2[Avaliação Média por Vendedor]
-D3[Vendas por Estado]
-D4[Evolução das Vendas no Tempo]
-end
-
-subgraph RELATORIO[📘 Etapa 5: Documentação e Entrega]
-E1[Notebook AluraStoreBrasil.ipynb]
-E2[Relatório Final do Challenge]
-end
-
-subgraph TECNOLOGIAS[💻 Tecnologias Utilizadas]
-T1[Python 3.x]
-T2[Pandas]
-T3[Matplotlib]
-T4[Seaborn]
-T5[Jupyter Notebook]
-end
-
-A1 --> B1 --> B2 --> C1 --> C2 --> D1 & D2 & D3 & D4 --> E1 --> E2
-T1 --> B1
-T2 --> B2
-T3 --> C1
-T4 --> C1
-T5 --> E1
+A --> FLUXO
 ```
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas  
 
-| Tecnologia | Descrição |
-|-------------|------------|
-| 🐍 **Python 3.x** | Linguagem principal para análise de dados. |
-| 📦 **Pandas** | Manipulação, limpeza e análise de dados. |
-| 📈 **Matplotlib** | Criação de gráficos e visualizações. |
-| 🎨 **Seaborn** | Estilização e aprimoramento visual dos gráficos. |
-| 📘 **Jupyter Notebook** | Ambiente interativo para execução e documentação. |
-
----
-
-## 🧠 Resultados
-
-O relatório final apresenta uma visão clara sobre:
-
-- O volume total de vendas por loja e categoria  
-- A média de avaliações por vendedor  
-- A distribuição geográfica das vendas no Brasil  
-- A evolução temporal das vendas, permitindo detectar tendências  
+| Tecnologia | Função Principal |
+|-------------|------------------|
+| 🐍 **Python 3.x** | Linguagem principal da análise |
+| 🧮 **Pandas** | Tratamento e consolidação dos dados |
+| 📊 **Matplotlib / Seaborn** | Geração de gráficos e visualizações |
+| 📓 **Jupyter Notebook** | Ambiente interativo de documentação e execução |
+| 🗃️ **Git & GitHub** | Controle de versão e publicação do projeto |
 
 ---
 
-## 🧩 Estrutura do Projeto
+## 🧠 Resultados Obtidos  
+
+O relatório apresenta uma visão detalhada sobre:
+- 💹 O **volume total de vendas** por loja e categoria  
+- ⭐ A **média de avaliações por vendedor**  
+- 🗺️ A **distribuição geográfica das vendas no Brasil**  
+- 📆 A **evolução temporal das vendas**, facilitando a identificação de tendências  
+
+Os gráficos permitem compreender o comportamento do consumidor e o desempenho das lojas de forma clara e visual.
+
+---
+
+## 📂 Estrutura de Diretórios
 
 ```
-📦 Alura_Store_Brasil
- ┣ 📜 README.md
- ┣ 📓 AluraStoreBrasil.ipynb
- ┣ 📁 data/
- ┃ ┣ loja_1.csv
- ┃ ┣ loja_2.csv
- ┃ ┣ loja_3.csv
- ┃ ┗ loja_4.csv
- ┣ 📁 img/
- ┃ ┣ vendas_por_categoria.png
- ┃ ┣ avaliacao_vendedor.png
- ┃ ┣ vendas_por_estado.png
- ┃ ┗ evolucao_vendas.png
- ┗ 📁 .venv/
+challenge1-data-science/
+│
+├── base-de-dados-challenge-1/
+│   ├── loja_1.csv
+│   ├── loja_2.csv
+│   ├── loja_3.csv
+│   └── loja_4.csv
+│
+├── graficos/
+│   └── .gitkeep
+│
+├── AluraStoreBrasilA.ipynb
+├── generate_plots.py
+├── RELATORIO_ANALISE_ALURA_STORE.md
+└── README.md
 ```
 
 ---
 
-## © Direitos Autorais
+## 🧾 Autor  
 
-**© 2025 - Alisson Luiz Siqueira Coqueiro**  
-Projeto desenvolvido como parte do **Challenge Data Science da Alura**.  
-Todos os direitos reservados.
+**Alisson Luiz Siqueira Coqueiro**  
+📧 [alissonls@gmail.com](mailto:alissonls@gmail.com)  
+💼 [LinkedIn](https://www.linkedin.com/in/alissoncoqueiro/)  
+
+---
+
+### 🪪 Licença  
+© 2025 **Alisson Luiz Siqueira Coqueiro** – Todos os direitos reservados.  
+Projeto desenvolvido para fins educacionais no **Challenge Data Science – Alura**.
