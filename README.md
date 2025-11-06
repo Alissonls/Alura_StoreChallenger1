@@ -64,7 +64,16 @@ O relatório apresenta uma visão detalhada sobre:
 
 Os gráficos permitem compreender o comportamento do consumidor e o desempenho das lojas de forma clara e visual.
 
----
+![alt text](challenge1-data-science/graficos/Analise_AVAcli.png)
+
+![alt text](challenge1-data-science/graficos/Analise_Categovend.png)
+
+![alt text](challenge1-data-science/graficos/Analise_comparitvaDesemp.png)
+
+![alt text](challenge1-data-science/graficos/Analise_defretemedioLoja.png)
+
+![alt text](challenge1-data-science/graficos/Analise_tdeio.png)
+
 
 ## 📂 Estrutura de Diretórios
 
