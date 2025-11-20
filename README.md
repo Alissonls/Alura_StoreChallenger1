@@ -11,7 +11,7 @@ O desafio consiste em:
 
 ---
 
-## 🧭 Estrutura do Projeto (Mermaid)
+## 🧭 Estrutura do Projeto 
 
 ```mermaid
 graph TD
